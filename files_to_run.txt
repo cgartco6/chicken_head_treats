@@ -1,0 +1,7 @@
+# One-time setup (run builder)
+python build_ecommerce.py
+
+# Then start the server
+python manage.py migrate
+python create_admin.py
+python manage.py runserver 8001
